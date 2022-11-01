@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Weather</title>
+</head>
+<body>
+ <section class="home">
+
+<header class="navbaar">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container ">
+          <a class="navbar-brand" href="#"><img src="img/logo.png " class="ms-4" alt=""><h3 class="ms-2">Weather</h3><p class="fs-6 " >tagline goes here</p></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav  ms-auto  ">
+              <li class="nav-item pe-5 ">
+                <a class="nav-link active btnhome" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item pe-5  ">
+                <a class="nav-link navbtn " href="#">News</a>
+              </li>
+              <li class="nav-item pe-5">
+                <a class="nav-link  navbtn" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item pe-5">
+                <a class="nav-link navbtn" href="#">Photos</a>
+              </li>
+              <li class="nav-item pe-5">
+                <a class="nav-link navbtn" href="#">Contact</a>
+              </li>
+
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+
+
+<section class="content mt-4">
+    <div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="d-flex">
+    <input type="text"  class="form-control w-100 inputvalue "   placeholder="find your location">
+    <button type="submit" class="btn btn-outline-light ms-3 btnsearch"  onclick="getweather()" >find</button>
+</div>
+</div>
+</div>
+    </div>
+</section>
+
+<section class="content mt-4">
+    <div class="container ">
+<div class="row text-light  ">
+<div class="col-lg-4 test bg-black displaydiv bg-opacity-50">
+  <div class="section-head  text-light text-center">
+   
+    
+    </div>
+    <div class="section-body text-center mt-3">
+    <h6>Cairo</h6>
+    <h1>31℃</h1>
+    <h6>Clear</h6>
+    <img src="http:cdn.weatherapi.com/weather/64x64/day/116.png" alt="">
+    <p>20%   18km/h    East</p>
+    </div>
+</div>
+
+
+
+<div class="col-lg-4 bg-dark displaydiv bg-opacity-50 firstday bg-info ">
+  <div class="section-head text-center text-light">
+  </div>
+  <div class="section-body mt-2 text-center ">
+    <img src="http:cdn.weatherapi.com/weather/64x64/day/116.png" alt="">
+  <h2>31℃</h2>
+  <h4>18℃</h4>
+  <h6>Clear</h6>
+  </div>
+    </div>
+
+
+
+ <div class="col-lg-4 bg-black displaydiv secondday  bg-opacity-50 ">
+  <div class="section-head text-center text-light">
+    </div>
+    <div class="section-body mt-2 text-center ">
+      <img src="http:cdn.weatherapi.com/weather/64x64/day/116.png" alt="">
+    <h2>31℃</h2>
+    <h4>18℃</h4>
+    <h6>Clear</h6>
+    </div>
+        </div>
+   
+</div>
+    </div>
+</section>
+
+<section class="contactsection mt-4">
+    <div class="container">
+<div class="row">
+<div class="col-lg-12">
+<div class="d-flex">
+    <input type="email" class="form-control w-100"  placeholder="Enter your Email to subscribe">
+    <button class="btn btn-outline-light ms-3 btnsearch">subscribe</button>
+    
+</div>
+<section class="container d-flex justify-content-between mt-5 w-100">
+<p class="text-light">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+
+</section>
+
+</div>
+</div>
+    </div>
+</section>
+
+
+
+
+
+
+ </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
